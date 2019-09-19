@@ -9,3 +9,9 @@ preventRefreshOnSubmit()
 function clearForm(){
   document.querySelectorAll('form input')[0].value = '';
 }
+
+function retrieveEmployeeInformation(){
+  const input = $('form input:first')[0];
+  return input.value;
+}
+
