@@ -22,4 +22,3 @@ function addNewElementAsLi(){
   li.innerHTML = name;
   ul.appendChild(li);
 }
-
