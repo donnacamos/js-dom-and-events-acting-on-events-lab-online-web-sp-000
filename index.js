@@ -22,3 +22,11 @@ function addNewElementAsLi(){
   li.innerHTML = name;
   ul.appendChild(li);
 }
+
+function addNewLiOnClick(e){
+  const submit = $('form input:last')[0];
+  submit.addEventListener('click', e => {
+    addNewElementAsLi();
+    clearForm();
+  })
+}
