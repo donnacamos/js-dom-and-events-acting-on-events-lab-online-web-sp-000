@@ -30,3 +30,12 @@ function addNewLiOnClick(e){
     clearForm();
   })
 }
+
+function clearEmployeeListOnLinkClick(){
+  const clearButton = $('a')[0];
+  clearButton.addEventListener('click', e => {
+    e.preventDefault();
+    const ul = document.querySelector('ul');
+    ul.innerHTML = '';
+  });
+}
