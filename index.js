@@ -21,6 +21,7 @@ function addNewElementAsLi(){
   const li = document.createElement('li')
   li.innerHTML = name;
   ul.appendChild(li);
+
 }
 
 function addNewLiOnClick(e){
@@ -31,6 +32,7 @@ function addNewLiOnClick(e){
   })
 }
 
+
 function clearEmployeeListOnLinkClick(){
   const clearButton = $('a')[0];
   clearButton.addEventListener('click', e => {
@@ -38,4 +40,5 @@ function clearEmployeeListOnLinkClick(){
     const ul = document.querySelector('ul');
     ul.innerHTML = '';
   });
+
 }
