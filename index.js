@@ -5,3 +5,9 @@ function preventRefreshOnSubmit(){
 }
 
 preventRefreshOnSubmit()
+
+function clearForm(){
+  document.querySelectorAll('form input')[0].value = '';
+}
+
+
