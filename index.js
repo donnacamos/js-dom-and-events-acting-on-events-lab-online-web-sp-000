@@ -14,4 +14,3 @@ function retrieveEmployeeInformation(){
   const input = $('form input:first')[0];
   return input.value;
 }
-
